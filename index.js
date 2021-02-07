@@ -12,6 +12,8 @@ document.getElementById('searchBtn').addEventListener('click', () => {          
     const mealItemsFunc = allMealItem => {                                              //Meal Name and Meal Picture Show Function by Searching KeyWard
         const mealItems = allMealItem.meals
         mealItemsSection.innerHTML = '';
+        showProductItemsDetails.innerHTML = '';
+
 
         //Condition for Meal Item Show
         if (mealItems == null || mealItems == undefined) {
