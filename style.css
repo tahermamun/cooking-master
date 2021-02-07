@@ -1,0 +1,123 @@
+/* Global Style */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EDD263;
+}
+
+/* Navbar Style */
+
+.navbarStyle {
+    font-weight: 600;
+}
+
+/* Search Section Style start */
+
+.searchDiv {
+    text-align: center;
+}
+
+#searchInput {
+    width: 40%;
+    height: 50px;
+    padding: 20px;
+    background: #F8F7F5;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+}
+
+#searchInput:focus {
+    background-color: #c5bdbd;
+    outline: none;
+}
+
+#searchBtn {
+    padding: 13px 20px;
+    background: #3b2d64;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    border: none;
+}
+
+#searchBtn:focus {
+    outline: none;
+}
+
+#searchBtn:hover {
+    background-color: #3b2d64;
+    color: white;
+}
+
+/* Search Section Style End */
+
+/* Searched  Product Section style start */
+
+#errorMessage h1 {
+    text-align: center;
+    color: #ff0000;
+    padding: 100px 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+#mealItemsDiv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.singleMealItemDiv {
+    width: 270px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.singleMealItemDiv img {
+    width: 270px;
+    height: 226px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.singleMealItemDiv h3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Searched  Product Section style start */
+
+/* Single Product Details section Style Start */
+
+.mealItemDetailsCard {
+    background: #ffffff;
+    width: 45%;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.mealItemDetailsCard img {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.mealItemDetailsCardBody {
+    padding: 40px;
+}
+
+.listIconColor {
+    color: #3B2D64;
+    margin-right: 5px;
+}
+
+.mealItemDetailsCardBody h2 {
+    margin: 5px 0;
+}
+
+.mealItemDetailsCardBody h4 {
+    margin: 20px 0px;
+}
+
+/* Single Product Details section Style End */

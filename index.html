@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master</title>
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light navbarStyle">
+                <div class="container-fluid container">
+                    <a class="navbar-brand" href="#">Cooking Master</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Recipes</a>
+                            <a class="nav-link" href="#">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Main Body Start -->
+    <main>
+        <!-- Search Section Start -->
+        <section class="m-5">
+            <div class="searchDiv">
+                <input id="searchInput" type="text" placeholder="Enter Meal Name">
+                <button id="searchBtn">Search</button>
+            </div>
+        </section>
+        <!-- Search Section End -->
+
+        <!-- Searched  Product Section Start -->
+        <section class="container">
+            <div id="errorMessage">
+            </div>
+            <div id="mealItemsDiv">
+            </div>
+        </section>
+        <!-- Single  Product Details Section End -->
+
+        <!--Single Product Details section Style Start -->
+
+        <section class="container d-flex justify-content-center">
+            <div id="showMealItemsDetails" class="mealItemDetailsCard">
+                <!-- <i class="listIconColor fa fa-check-square" aria-hidden="true"></i> -->
+            </div>
+        </section>
+        <!--Single Product Details section Style End -->
+    </main>
+    <!-- Main Body End -->
+
+    <!-- bootstrap Path -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript-->
+    <script src="index.js"></script>
+</body>
+</html>
