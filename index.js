@@ -16,16 +16,13 @@ document.getElementById('searchBtn').addEventListener('click', () => {          
 
 
         //Condition for Meal Item Show
-        if (mealItems == null || mealItems == undefined) {
+        if (mealItems == null || mealItems == undefined ||(searchValue.value == '')) {
             errorMessage.innerHTML = `
-            <h1>Sorry sir, We Don't Have This Meal. Please Try Another Meal!</h1>
+            <h1>Sorry sir, Please Enter a Available Meal!</h1>
             `;
             mealItemsSection.innerHTML = '';
             showProductItemsDetails.innerHTML = '';
             searchValue.value = '';
-        }
-        else if (searchValue.value == '') {
-            showProductItemsDetails.innerHTML = '';
         }
         else {
             mealItems.forEach(singleMealItem => {
